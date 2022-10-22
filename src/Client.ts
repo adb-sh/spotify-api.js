@@ -147,8 +147,8 @@ export class Client {
      * @param options The same client options provided for the constructor but "onReady" field should not be provided.
      * @example const client = await Client.create({ token: "token" });
      */
-    public static create(options: Omit<ClientOptions, 'onReady'>): Promise<Client> {
-        return new Promise((onReady, onFail) => new Client({ ...options, onReady, onFail }));
+    public static create(options: Omit<ClientOptions, 'onReady' | 'onFail'>): Promise<Client> {
+        return new Promise((onReady, onFail) => new Client({ ...options, onReady, onFail } as ClientOptions));
     }
 
     /**
