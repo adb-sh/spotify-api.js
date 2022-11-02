@@ -1,5 +1,5 @@
 {
-    "name": "spotify-api.js",
+    "name": "adb-sh-spotify-api.js",
     "version": "9.2.3",
     "description": "A complete node js wrapper of spotify api with oauth support",
     "main": "dist/index.js",
